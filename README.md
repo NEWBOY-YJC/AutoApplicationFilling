@@ -42,3 +42,5 @@ pip install pandas win10toast PyAutoGUI -i https://pypi.tuna.tsinghua.edu.cn/sim
   重命名你的表格文件为`志愿信息.xlsx`，并和`Main.py`放在同一文件夹内。
   
   打开志愿填报网页，然后运行`Main.py`即可
+
+（本人只是一个学生，）
