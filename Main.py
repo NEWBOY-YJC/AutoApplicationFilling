@@ -3,12 +3,10 @@ import pyautogui
 import time
 from win10toast import ToastNotifier
 
-# 初始化通知工具
 toast = ToastNotifier()
 
 deny = 0.2
 
-# 读取Excel文件（请根据实际文件路径修改）
 df = pd.read_excel('志愿信息.xlsx', dtype={
     '院校代码': str,
     '专业组': str,
@@ -28,15 +26,14 @@ def format_code(value):
     except:
         return str(value).zfill(2)
 
-# 显示初始通知
 toast.show_toast(
     "志愿自动填报程序",
-    "请在10秒内将光标定位到网页的第一个输入框（院校代码）...",
+    "请在10秒内将光标定位到网页的第一个输入框（院校代码），自动填写即将开始...",
     duration=10,
     threaded=True
 )
 
-time.sleep(10)  # 等待用户定位光标
+time.sleep(10) 
 
 for index, row in df.iterrows():
     # 输入院校代码
@@ -78,7 +75,7 @@ for index, row in df.iterrows():
         pyautogui.press('tab')
     time.sleep(deny)
 
-    # 发送进度通知
+    
     toast.show_toast(
         "填报进度更新",
         f"志愿 {index+1}/{len(df)} 填写完成",
@@ -87,7 +84,7 @@ for index, row in df.iterrows():
     )
 
 time.sleep(2)
-# 最终完成通知
+
 toast.show_toast(
     "志愿自动填报程序",
     "所有志愿填写已完成！",
