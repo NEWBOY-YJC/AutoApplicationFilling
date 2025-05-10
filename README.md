@@ -43,4 +43,4 @@ pip install pandas win10toast PyAutoGUI -i https://pypi.tuna.tsinghua.edu.cn/sim
   
   打开志愿填报网页，然后运行`Main.py`即可
 
-（本人只是一个学生，）
+（本人只是一个学生，本仓库里的所有内容都只是出于兴趣爱好所为。）
