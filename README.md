@@ -6,7 +6,13 @@
 ## 使用方法
 ### 1.安装Python3
 
-  本程序编写时使用Python3.11.5编辑器，请使用更高的版本以避免出现兼容性问题。
+  本程序编写时使用Python3.11.5编辑器，请使用相同或更高的版本以避免出现兼容性问题。
+
+  Python官方网站 https://www.python.org/ 
+
+  本程序在winget上可用，可使用以下PowerShell命令安装：
+
+  `winget install Python.Python.3.12`
 
 ### 2.安装必要的模块
 
@@ -43,4 +49,4 @@ pip install pandas win10toast PyAutoGUI -i https://pypi.tuna.tsinghua.edu.cn/sim
   
   打开志愿填报网页，然后运行`Main.py`即可
 
-（本人只是一个学生，本仓库里的所有内容都只是出于兴趣爱好所为。）
+
